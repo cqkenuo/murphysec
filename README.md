@@ -6,10 +6,17 @@
   <h4 align="center">一款专注于软件供应链安全的开源工具，包含开源组件依赖分析、漏洞检测及漏洞修复等功能。</h4>
 </h1>
 <p align="center">
-  
-</p>
+  <img src="https://img.shields.io/github/go-mod/go-version/murphysec/murphysec.svg?style=flat-square">
+  <a href="https://github.com/murphysec/murphysec/releases/latest">
+    <img src="https://img.shields.io/github/release/murphysec/murphysec.svg?style=flat-square">
+  </a>
+  <a href="https://github.com/murphysec/murphysec/blob/master/LICENSE">
+    <img alt="GitHub" src="https://img.shields.io/github/license/murphysec/murphysec?style=flat-square">
+  </a>
+  <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/murphysec/murphysec?style=flat-square">
+  <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/murphysec/murphysec?style=social">
 
-![](media/16404924273208/16404949624351.jpg)
+</p>
 
 ## 安装
 
@@ -17,6 +24,7 @@
 
 ```shell
 wget https://github.com/murphysec/murphysec/releases/latest/download/murphysec-darwin-amd64
+chmod 0755 murphysec-darwin-amd64 && mv murphysec-darwin-amd64 /usr/bin/murphysec
 ```
 
 ### Windows
@@ -33,6 +41,7 @@ scoop install murphysec
 
 ```shell
 wget https://github.com/murphysec/murphysec/releases/latest/download/murphysec-linux-amd64
+chmod 0755 murphysec-linux-amd64 && mv murphysec-linux-amd64 /usr/bin/murphysec
 ```
 
 ## 配置
@@ -44,17 +53,17 @@ wget https://github.com/murphysec/murphysec/releases/latest/download/murphysec-l
 ## 用法
 
 ```
-murphysec: A software supply chain security inspection tool.            
-                                                                        
-Usage:                                                                  
-  murphysec [flags]                                                     
-  murphysec [command]                                                   
-                                                                        
-Available Commands:                                                     
-  auth        manage the API token                                      
+murphysec: A software supply chain security inspection tool.
+
+Usage:
+  murphysec [flags]
+  murphysec [command]
+
+Available Commands:
+  auth        manage the API token
   completion  generate the autocompletion script for the specified shell
-  help        Help about any command                                    
-  scan
+  help        Help about any command
+  scan        Scan open source vulnerabilities in project
 
 Flags:
       --color          colorize the output (default true)
